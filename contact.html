@@ -2,7 +2,7 @@
     <!--
         Student Name: Stephen Davis
         File Name: contact.html
-        Date: October 25, 2022
+        Date: November 2, 2022
     -->
 
 <html lang="en">
@@ -66,6 +66,47 @@
           <p>Address: <span class="link">8989 Rescue Drive, Ocala, FL 34471</span></p>
 
       </div>
+
+      <div id="form">
+        <h2>Complete the form below and we will contact you soon.</h2>
+        <form class="form-grid"> <!-- Start Form -->
+
+  <fieldset>
+    <legend>Contact Information</legend>
+    <label for="fName">First Name:</label>
+    <input type="text" name="fName" id="fName" required>
+
+    <label for="lName">Last Name:</label>
+    <input type="text" name="lName" id="lName" required>
+
+    <label for="bName">Name of Business:</label>
+    <input type="text" name="bName" id="bName" required>
+
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" required>
+
+    <label for ="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required>
+  </fieldset>
+
+  <fieldset>
+    <legend>Additional Information</legend>
+    <p>I would like more information about:</p>
+
+    <label for="vol"> <input type="radio" name="info" value="Volunteering" required>Volunteering</label>
+    <label for="sponsor"> <input type="radio" name="info" value="Sponsorship Opportunities" required>Sponsorship Opportunities</label>
+    <label for="wild"> <input type="radio" name="info" value="Wildlife" required>Wildlife</label>
+    <label for="other"> <input type="radio" name="info" value="Other" required>Other, please specify below</label>
+
+  </select>
+
+      <label for="questions">Questions?</label>
+        <textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+        </fieldset>
+
+        <input type="submit" id="submit" value="submit" class="btn">
+
+    </form>
 
     </main>
 
